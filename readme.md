@@ -1,4 +1,4 @@
-### Decision Tree Implementation for Iris Dataset
+# Decision Tree Implementation for Iris Dataset
 This repository contains an implementation of a decision tree classifier using the ID3 algorithm. The classifier is specifically designed to work with the Iris dataset, a classic dataset in machine learning.
 
 ## Overview
@@ -10,13 +10,13 @@ Supports binary splits for continuous attributes
 Includes a simple leaf merging mechanism to simplify the tree
 Calculates the accuracy of the decision tree on a test set
 Prints the structure of the decision tree
-# Requirements
+### Requirements
 Python 3.x
 Installation
 No special installation is required. Simply clone this repository and ensure you have Python installed.
 
 ## Usage
-# Dataset
+### Dataset
 Ensure you have the IRIS.csv file in the same directory as the script. The CSV file should have the following structure:
 
 
@@ -24,7 +24,7 @@ sepal_length,sepal_width,petal_length,petal_width,species
 5.1,3.5,1.4,0.2,Iris-setosa
 4.9,3.0,1.4,0.2,Iris-setosa
 ...
-# Running the Script
+### Running the Script
 Clone the repository and navigate to the directory:
 
 
@@ -32,10 +32,10 @@ git clone <repository_url>
 cd <repository_directory>
 Place the IRIS.csv file in the same directory.
 
-# Run the script:
+### Run the script:
 
 python decision_tree.py
-# Script Output
+### Script Output
 The script performs the following steps:
 
 Loads the Iris dataset from the CSV file.
@@ -44,7 +44,7 @@ Builds the decision tree using the training set.
 Merges leaves with identical predictions.
 Evaluates the decision tree on the test set and prints the accuracy.
 Prints the structure of the decision tree.
-# Example output:
+### Example output:
 
 Total dataset size: 150
 Training set size: 112
