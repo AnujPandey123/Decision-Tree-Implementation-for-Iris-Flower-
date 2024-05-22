@@ -29,7 +29,9 @@ Clone the repository and navigate to the directory:
 
 
 git clone <repository_url>
+
 cd <repository_directory>
+
 Place the IRIS.csv file in the same directory.
 
 ### Run the script:
@@ -39,45 +41,85 @@ python decision_tree.py
 The script performs the following steps:
 
 Loads the Iris dataset from the CSV file.
+
 Splits the dataset into a training set (75%) and a test set (25%).
+
 Builds the decision tree using the training set.
+
 Merges leaves with identical predictions.
+
 Evaluates the decision tree on the test set and prints the accuracy.
+
 Prints the structure of the decision tree.
 ### Example output:
 
 Total dataset size: 150
+
 Training set size: 112
+
 Test set size: 38
+
 ----------------
+
 DECISION TREE
+
 petal_length < 2.45?
+
 [True] Iris-setosa
+
 [False] petal_width < 1.75?
+
     [True] Iris-versicolor
+    
     [False] Iris-virginica
-----------------
+----
+------------
+
 Accuracy on test set: 97.37%
+
 Code Explanation
+
 Class TreeNode
+
 Represents a node in the decision tree.
+
 Contains methods to build the tree, predict the class for a sample, and merge identical leaf nodes.
+
 Class ID3Tree
+
 Manages the overall decision tree.
+
 Contains methods to build the tree, merge identical leaves, predict the class for a sample, and print the tree structure.
-Functions
+
+### Functions
+
 calculate_entropy(data): Computes the entropy of the dataset.
+
+
 calculate_info_gain(feature, split_value, data): Computes the information gain for a given feature and split value.
+
 find_best_split(features, feature_values, data): Identifies the best feature and split value based on information gain.
+
 load_iris_data(): Loads the Iris dataset from the CSV file.
-Main Execution
+
+### Main Execution
+
 Loads the dataset.
+
 Splits the dataset into training and test sets.
+
 Builds the decision tree.
+
 Evaluates the decision tree on the test set.
+
 Prints the accuracy and structure of the decision tree.
+
 License
+
 This project is licensed under the MIT License.
 
-Contact
+
+
+### Contact
+
 For any questions or issues, please open an issue on the repository or contact the author.
